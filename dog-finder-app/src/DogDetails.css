@@ -1,0 +1,13 @@
+.DogDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.DogDetails-image {
+  width: 400px;
+}
+
+h2 {
+  margin: 0;
+}
