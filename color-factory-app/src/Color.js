@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+import "./Color.css"
 
 const Color = ({colors}) => {
   let params = useParams();
@@ -11,7 +12,7 @@ const Color = ({colors}) => {
     return (
     <div className="Color" style={{backgroundColor: color.color}}>
       <h1 className="Color-title">{color.name.toUpperCase()}</h1>
-      <Link to="/colors">Go Back</Link>
+      <Link className="Color-goBackButton" to="/colors">Go Back</Link>
     </div>
 
     )

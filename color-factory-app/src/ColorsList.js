@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./ColorList.css";
 
 const ColorList = ({colors}) => {
 
@@ -16,7 +17,7 @@ const ColorList = ({colors}) => {
   return (
     <div className="ColorList">
       <h1>Explore The World Of Colors!</h1>
-      <Link to="/colors/new">Add A New Color!</Link>
+      <Link className="ColorList-addColorButton" to="/colors/new">Add A New Color!</Link>
       <ul className="ColorList-list">
           {renderColors()}
       </ul>

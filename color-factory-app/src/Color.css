@@ -1,0 +1,12 @@
+.Color {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.Color-goBackButton {
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}

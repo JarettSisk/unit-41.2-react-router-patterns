@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import "./NewTodoForm.css";
+import "./NewColorForm.css";
 
 const NewColorForm = ({addNewColor}) => {
   const navigate = useNavigate();
@@ -32,28 +32,33 @@ const NewColorForm = ({addNewColor}) => {
 
   // render form
   return (
-    <form onSubmit={handleSubmit} className="NewTodoForm">
-      <input
-        className="NewColorForm-input-name"
-        type="text"
-        id="name"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-        placeholder="purple"
-        required
-      />
-      <input
-        className="NewColorForm-input-color"
-        type="color"
-        id="color"
-        name="color"
-        value={formData.color}
-        onChange={handleChange}
-        required
-      />
-      <button className="NewColorForm-button">ADD</button>
-    </form>
+    <div className="NewColorForm-wrapper">
+      <form onSubmit={handleSubmit} className="NewColorForm">
+        <label htmlFor="name">Color Name</label>
+        <input
+          className="NewColorForm-input-name"
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="violet"
+          required
+        />
+        <label htmlFor="name">Color Choice</label>
+        <input
+          className="NewColorForm-input-color"
+          type="color"
+          id="color"
+          name="color"
+          value={formData.color}
+          onChange={handleChange}
+          required
+        />
+        <button className="NewColorForm-button">Add</button>
+      </form>
+    </div>
+    
   )
 
 }

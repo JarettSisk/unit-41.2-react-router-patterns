@@ -7,11 +7,9 @@ import {
   Routes,
   Route,
   Navigate,
-  useParams,
 } from "react-router-dom";
 
 function AppRoutes() {
-  const params = useParams();
   const INITIIAL_COLORS = [
     {
       name: "pink",
