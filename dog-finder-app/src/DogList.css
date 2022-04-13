@@ -12,13 +12,7 @@
   padding: 10px;
 }
 
-a {
-  display: block;
-  font-size: 1.3rem;
-  margin: 5px;
-  text-decoration: none;
-  color: rgb(0, 195, 255);
-}
+
 
 a:hover {
   color: black;
